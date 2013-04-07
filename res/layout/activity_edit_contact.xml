@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditContactActivity" >
+ 
+
+    <TextView
+		android:id="@+id/activityTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dip"
+		android:layout_marginTop="10dip"
+		android:gravity="center_horizontal"
+		android:text="Edit Contact"
+		android:textSize="20dip"
+	/>
+
+	<EditText
+		 android:id="@+id/editContactName"
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+		 android:layout_below="@+id/activityTitle"
+		 android:hint="Contact Name"
+		 android:layout_marginBottom="5dip"
+		 android:inputType="textPersonName"
+	>
+		<requestFocus />
+	</EditText>
+	
+	<EditText
+		 android:id="@+id/editContactPhone"
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+		 android:layout_below="@+id/contactName"
+		 android:hint="Contact Phone"
+		 android:layout_marginBottom="5dip"
+		 android:inputType="phone"
+	/>
+
+	<EditText
+		 android:id="@+id/editContactEmail"
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+		 android:layout_below="@+id/contactPhone"
+		 android:hint="Contact Email"
+		 android:layout_marginBottom="5dip"
+		 android:inputType="textWebEmailAddress"
+	/>
+	
+	<TextView
+	    android:id="@+id/editContactGenderLabel"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dip"
+		android:layout_marginLeft="5dip"
+		android:text="Contact Gender"
+		android:textSize="15dip"
+		android:layout_below="@+id/contactEmail"
+	/>
+	
+	
+	<RadioGroup android:id="@+id/editContactGenderGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dip">
+	    
+		<RadioButton
+	    	android:id="@+id/editContactMale"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Male"
+	    />
+
+	    <RadioButton
+	        android:id="@+id/editContactFemale"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Female"
+		/>
+
+	</RadioGroup>
+	
+    	
+    	<Button
+			android:id="@+id/editContactsave"
+		    android:layout_height="wrap_content"
+	  		android:layout_width="fill_parent"
+		    android:text="salvar"
+	    />
+    
+       
+ 
+</LinearLayout>
